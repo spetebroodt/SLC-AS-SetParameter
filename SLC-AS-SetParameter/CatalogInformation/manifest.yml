@@ -1,0 +1,19 @@
+type: Automation
+id: 83b3eb7d-2cc4-4dd5-8223-35fc126ab6b4
+
+title: Set Parameter
+
+source_code_url: https://github.com/SkylineCommunications/SLC-AS-SetParameter
+
+owners:
+  - name: Jan Staelens
+  - name: Michiel Oda
+
+# [Optional]
+# Tags that allow you to categorize your Catalog items.
+#   Max number of tags: 5
+#   Max length: 50 characters.
+#   Cannot contain newlines.
+#   Cannot contain leading or trailing whitespace characters.
+tags:
+  - GQI-Supported

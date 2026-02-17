@@ -1,0 +1,19 @@
+name: Skyline Reusable Quality Workflow
+
+on:
+  push:
+    branches:
+      - '**'
+    tags:
+      - "[0-9]+.[0-9]+.[0-9]+"
+      - "[0-9]+.[0-9]+.[0-9]+-**"
+
+  workflow_dispatch:
+
+jobs:
+
+  CI:
+    uses: SkylineCommunications/_ReusableWorkflows/.github/workflows/DataMiner App Packages Master Workflow.yml@main
+    with:
+      configuration: Release
+      sonarCloudProjectName: ${{ vars.SONAR_NAME }}
